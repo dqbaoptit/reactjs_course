@@ -9,10 +9,7 @@ export default function QuickStart() {
       initial={{ x: 10, opacity: 0 }}
       exit={{ opacity: 0 }}
       transition={{ delay: 0.2 }}
-      style={{
-        width: '100%',
-        height: '100%',
-      }}
+      style={{ padding: '0rem 3rem' }}
     >
       <h3>Quick start</h3>
       <hr />
@@ -72,7 +69,9 @@ export default function QuickStart() {
         />
       </div>
       <h5>Folder | App </h5>
-      <div style={{ display: 'flex', alignItems: 'center' }}>
+      <div
+        style={{ display: 'flex', alignItems: 'center', flexWrap: 'nowrap' }}
+      >
         <div
           style={{
             width: '20rem',

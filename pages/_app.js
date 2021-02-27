@@ -1,6 +1,6 @@
 import '../styles/globals.scss';
 import Head from 'next/head';
-import { Navigation, Sidebar } from '../containers';
+import { Navigation } from '../containers';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -17,25 +17,17 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
       </Head>
-      <Navigation />
-      <div style={{ display: 'flex' }}>
-        <Sidebar />
-        <div
-          style={{
-            flex: 1,
-            justifyContent: 'center',
-            alignItems: 'center',
-            display: 'flex',
-            margin: '.5rem',
-            border: '1px solid #19865c',
-            borderRadius: '7px',
-            padding: '1rem',
-            overflowY: 'scroll',
-            maxHeight: '89vh',
-          }}
-        >
-          <Component {...pageProps} />
-        </div>
+      <div style={{ position: 'absolute', width: '100vw' }}>
+        <Navigation />
+      </div>
+      <div
+        style={{
+          overflowY: 'scroll',
+          height: '100%',
+          padding: '5rem 0rem',
+        }}
+      >
+        <Component {...pageProps} />
       </div>
     </>
   );

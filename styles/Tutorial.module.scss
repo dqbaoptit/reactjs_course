@@ -1,0 +1,10 @@
+.tutorial {
+  &__sidebar {
+    background: rgb(247, 247, 247);
+    padding: 2rem;
+  }
+  &__main {
+    flex: 2;
+    padding: 2rem;
+  }
+}

@@ -1,9 +1,10 @@
 .navigation {
-  height: 5rem;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  height: 5rem;
+  max-width: 100%;
+  display: flex;
+
   padding: 1rem 2rem;
 
   background: linear-gradient(to bottom left, #19865c, #116944);
@@ -27,5 +28,9 @@
       font-weight: 500;
       font-family: 'Truculenta', sans-serif;
     }
+  }
+  &__routes {
+    display: flex;
+    justify-content: space-between;
   }
 }
